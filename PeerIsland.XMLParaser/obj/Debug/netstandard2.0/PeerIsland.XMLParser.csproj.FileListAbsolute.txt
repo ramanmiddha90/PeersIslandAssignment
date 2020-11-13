@@ -1,0 +1,8 @@
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParaser\obj\Debug\netstandard2.0\PeerIsland.XMLParser.AssemblyInfoInputs.cache
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParaser\obj\Debug\netstandard2.0\PeerIsland.XMLParser.AssemblyInfo.cs
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParaser\bin\Debug\netstandard2.0\PeerIsland.XMLParser.deps.json
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParaser\bin\Debug\netstandard2.0\PeerIsland.XMLParser.dll
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParaser\bin\Debug\netstandard2.0\PeerIsland.XMLParser.pdb
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParaser\obj\Debug\netstandard2.0\PeerIsland.XMLParser.dll
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParaser\obj\Debug\netstandard2.0\PeerIsland.XMLParser.pdb
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParaser\obj\Debug\netstandard2.0\PeerIsland.XMLParser.csprojAssemblyReference.cache

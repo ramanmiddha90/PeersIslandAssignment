@@ -1,0 +1,11 @@
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParser.Extension\obj\Debug\netstandard2.0\PeerIsland.XMLParser.Extension.csprojAssemblyReference.cache
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParser.Extension\obj\Debug\netstandard2.0\PeerIsland.XMLParser.Extension.AssemblyInfoInputs.cache
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParser.Extension\obj\Debug\netstandard2.0\PeerIsland.XMLParser.Extension.AssemblyInfo.cs
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParser.Extension\bin\Debug\netstandard2.0\PeerIsland.XMLParser.Extension.deps.json
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParser.Extension\bin\Debug\netstandard2.0\PeerIsland.XMLParser.Extension.dll
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParser.Extension\bin\Debug\netstandard2.0\PeerIsland.XMLParser.Extension.pdb
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParser.Extension\bin\Debug\netstandard2.0\PeerIsland.XMLParser.dll
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParser.Extension\bin\Debug\netstandard2.0\PeerIsland.XMLParser.pdb
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParser.Extension\obj\Debug\netstandard2.0\PeerIsland.XMLParser.Extension.csproj.CopyComplete
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParser.Extension\obj\Debug\netstandard2.0\PeerIsland.XMLParser.Extension.dll
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParser.Extension\obj\Debug\netstandard2.0\PeerIsland.XMLParser.Extension.pdb

@@ -1,0 +1,8 @@
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParaser\bin\Debug\netstandard2.0\PeerIsland.XMLParaser.deps.json
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParaser\bin\Debug\netstandard2.0\PeerIsland.XMLParaser.dll
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParaser\bin\Debug\netstandard2.0\PeerIsland.XMLParaser.pdb
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParaser\obj\Debug\netstandard2.0\PeerIsland.XMLParaser.csprojAssemblyReference.cache
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParaser\obj\Debug\netstandard2.0\PeerIsland.XMLParaser.AssemblyInfoInputs.cache
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParaser\obj\Debug\netstandard2.0\PeerIsland.XMLParaser.AssemblyInfo.cs
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParaser\obj\Debug\netstandard2.0\PeerIsland.XMLParaser.dll
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParaser\obj\Debug\netstandard2.0\PeerIsland.XMLParaser.pdb
