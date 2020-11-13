@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Linq;
 using System.Xml;
-namespace PeerIsland.XMLParser.Parsers
+namespace PeerIsland.XMLParser
 {
     public class XMLObjectParser : IXMLParser
     {

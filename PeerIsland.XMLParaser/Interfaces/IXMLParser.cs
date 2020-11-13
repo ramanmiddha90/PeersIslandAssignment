@@ -5,7 +5,7 @@ using System.Xml;
 
 namespace PeerIsland.XMLParser
 {
-    interface IXMLParser
+    internal interface IXMLParser
     {
         bool CanParse(Type value);
         void ParseXML(XmlWriter xmlWriter, object value);

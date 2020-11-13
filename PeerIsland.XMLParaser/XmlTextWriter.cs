@@ -22,6 +22,8 @@ namespace PeerIsland.XMLParser
             if (Value == null)
                 this.WriteNull();
 
+            var IXMLParser = XMLParserProcessor.GetXMLParser(typeof(T));
+            IXMLParser.ParseXML(xmlWriter, Value);
         }
 
         internal override void WriteIndent()

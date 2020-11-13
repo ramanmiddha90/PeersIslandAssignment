@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Xml;
 
-namespace PeerIsland.XMLParser.Parsers
+namespace PeerIsland.XMLParser
 {
     public class XMLStringParser : AbstractXMLParser<string>
     {
