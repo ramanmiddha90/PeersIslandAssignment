@@ -8,14 +8,14 @@ namespace PeerIsland.XMLParser.Tests
     public class XMLParserTests
     {
         [Fact]
-        public void SerialzeObject()
+        public void SerialzeCollectionObject()
         {
             var xmlConfiguration = new XMLConfiguration();
             var xmlParser = new XMLParser(xmlConfiguration);
-            var employeeCollection =new EmployeesCollection()
+            var employeeCollection = new EmployeesCollection()
             {
 
-                Employees= new List<Employee>()
+                Employees = new List<Employee>()
             {
                 new Employee()
                 {
@@ -29,27 +29,68 @@ namespace PeerIsland.XMLParser.Tests
                     age="40",
                     designation="Senior Developer"
                 }
-            }};
+            }
+            };
 
             var serializedString = xmlParser.Serialize<EmployeesCollection>(employeeCollection);
 
-            var expected = @"
-                            <employees>
-                            <employee>
-                            <name>Mohan</name> <age>25</age> <designation>Developer</designation> </employee> <employee>
-                            <name>Anitha</name> <age>40</age> <designation>Senior Developer</designation> </employee> </employees>";
+            var expected = @"<?xml version=""1.0"" encoding=""utf-16""?>
+<EmployeesCollection>
+	<Employees>
+		<Employee>
+			<name>Mohan</name>
+			<age>25</age>
+			<designation>Developer</designation>
+			<isPermanent>false</isPermanent>
+		</Employee>
+		<Employee>
+			<name>Anitha</name>
+			<age>40</age>
+			<designation>Senior Developer</designation>
+			<isPermanent>false</isPermanent>
+		</Employee>
+	</Employees>
+</EmployeesCollection>";
             Assert.Equal(expected.Trim(), serializedString.Trim());
         }
 
         [Fact]
-        public void SerialzeObjecWithNullValue()
+        public void SerialzeSingleEmployeeObject()
         {
             var xmlConfiguration = new XMLConfiguration();
             var xmlParser = new XMLParser(xmlConfiguration);
 
-            var serializedString = xmlParser.Serialize<Employee>(new Employee() { age="22", isPermanent=false, designation="fsd",name="fdsf", adress=new Address() {  address1="add"} });
+            var serializedString = xmlParser.Serialize<Employee>(new Employee() { age = "22", isPermanent = false, designation = "Developer", name = "raman", adress = new Address() { address1 = "add" } });
 
-            var expected = @"<Root/>";
+            var expected = @"<?xml version=""1.0"" encoding=""utf-16""?>
+<Employee>
+	<name>raman</name>
+	<age>22</age>
+	<designation>Developer</designation>
+	<Address>
+		<address1>add</address1>
+	</Address>
+	<isPermanent>false</isPermanent>
+</Employee>";
+            Assert.Equal(expected.Trim(), serializedString.Trim());
+        }
+
+
+        [Fact]
+        public void SerialzeSingleEmployeeObjectWithNullObject()
+        {
+            var xmlConfiguration = new XMLConfiguration();
+            var xmlParser = new XMLParser(xmlConfiguration);
+
+            var serializedString = xmlParser.Serialize<Employee>(new Employee() { age = "22", isPermanent = false, designation = "Developer", name = "raman" });
+
+            var expected = @"<?xml version=""1.0"" encoding=""utf-16""?>
+<Employee>
+	<name>raman</name>
+	<age>22</age>
+	<designation>Developer</designation>
+	<isPermanent>false</isPermanent>
+</Employee>";
             Assert.Equal(expected.Trim(), serializedString.Trim());
         }
     }
