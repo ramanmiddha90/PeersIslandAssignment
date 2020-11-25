@@ -12,8 +12,10 @@ namespace PeerIsland.XMLParser.Tests
         {
             var xmlConfiguration = new XMLConfiguration();
             var xmlParser = new XMLParser(xmlConfiguration);
+            var employeeCollection =new EmployeesCollection()
+            {
 
-            var employees = new List<Employee>()
+                Employees= new List<Employee>()
             {
                 new Employee()
                 {
@@ -27,9 +29,9 @@ namespace PeerIsland.XMLParser.Tests
                     age="40",
                     designation="Senior Developer"
                 }
-            };
+            }};
 
-            var serializedString = xmlParser.Serialize<List<Employee>>(employees);
+            var serializedString = xmlParser.Serialize<EmployeesCollection>(employeeCollection);
 
             var expected = @"
                             <employees>

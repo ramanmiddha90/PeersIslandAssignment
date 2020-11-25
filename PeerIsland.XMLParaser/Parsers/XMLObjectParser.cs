@@ -30,7 +30,14 @@ namespace PeerIsland.XMLParser
             xmlWriter.WriteStartElement(GetRootElement(value));
             foreach (var property in GetXMLObjectProperties(value.GetType()))
             {
-                if (XMLTypeExtensions.IsObject(property.PropertyType))
+                if(XMLTypeExtensions.IsCollection(property.PropertyType))
+                {
+                    xmlWriter.WriteStartElement(property.Name);
+                    var propValue = GetPropertyValue(property, value);
+                    writerContext.WriteXML(propValue);
+                    xmlWriter.WriteEndElement();
+                }
+                else if (XMLTypeExtensions.IsObject(property.PropertyType))
                 {
                     var propValue = GetPropertyValue(property, value);
                     writerContext.WriteXML(propValue);
