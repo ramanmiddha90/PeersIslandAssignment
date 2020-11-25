@@ -15,7 +15,8 @@ namespace PeerIsland.XMLParser
                 new XMLIntParser(),
                 new XMLStringParser(),
                 new XMLCollectionParser(),
-                 new XMLObjectParser(),
+                new XMLBooleanParser(),
+                new XMLObjectParser(),
             };
         }
 

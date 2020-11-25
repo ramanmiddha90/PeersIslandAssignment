@@ -45,7 +45,7 @@ namespace PeerIsland.XMLParser.Tests
             var xmlConfiguration = new XMLConfiguration();
             var xmlParser = new XMLParser(xmlConfiguration);
 
-            var serializedString = xmlParser.Serialize<List<Employee>>(null);
+            var serializedString = xmlParser.Serialize<Employee>(new Employee() { age="22", isPermanent=false, designation="fsd",name="fdsf", adress=new Address() {  address1="add"} });
 
             var expected = @"<Root/>";
             Assert.Equal(expected.Trim(), serializedString.Trim());

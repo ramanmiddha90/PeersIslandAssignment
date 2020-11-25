@@ -7,7 +7,7 @@ namespace PeerIsland.XMLParser
 {
     public class XMLStringParser : AbstractXMLParser<string>
     {
-        public override void ParseXML(XmlWriter xmlWriter, object value)
+        public override void ParseXML(XmlWriter xmlWriter, object value, XmlTextWriterSerializer writerContext)
         {
             if (value != null)
             {

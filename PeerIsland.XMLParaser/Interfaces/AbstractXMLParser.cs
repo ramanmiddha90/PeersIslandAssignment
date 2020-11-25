@@ -12,7 +12,7 @@ namespace PeerIsland.XMLParser
             return value == typeof(T);
         }
 
-        public abstract void ParseXML(XmlWriter xmlWriter, object value);
+        public abstract void ParseXML(XmlWriter xmlWriter, object value, XmlTextWriterSerializer writerContext);
        
     }
 }

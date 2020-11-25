@@ -8,7 +8,7 @@ namespace PeerIsland.XMLParser
     /// <summary>
     /// XMLTextWriter 
     /// </summary>
-    internal abstract class AbstractXMLTextWriter
+    public abstract class AbstractXMLTextWriter
     {
         protected XmlWriter xmlWriter;
         protected XmlWriterSettings xmlWriterSettings;
@@ -18,17 +18,17 @@ namespace PeerIsland.XMLParser
             this.xmlWriterSettings = xmlWriterSettings;
         }
 
-        internal abstract void WriteXML<T>( T Value);
+        public abstract void WriteXML(object Value);
 
-        internal abstract void WritePropertyTypeName<T>(T propertyType);
+        public abstract void WritePropertyTypeName<T>(T propertyType);
 
-        internal abstract void WritePropertyValue<T>( T propertyType);
+        public abstract void WritePropertyValue(Type propertyType, object value);
 
-        internal abstract void WriteNull();
+        public abstract void WriteNull();
 
-        internal abstract void WriteIndent();
+        public abstract void WriteIndent();
 
-        internal void WriteComment(string comments)
+        public void WriteComment(string comments)
         {
             this.xmlWriter.WriteComment(comments);
         }

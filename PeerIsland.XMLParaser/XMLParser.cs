@@ -30,7 +30,7 @@ namespace PeerIsland.XMLParser
                 throw new ArgumentNullException(nameof(input));
 
             XmlWriter xmlWriter;
-            XmlTextWriter xmlTextWriter;
+            XmlTextWriterSerializer xmlTextWriter;
             var xmlOutputWriter = this.xmlConfiguration.GetXmlOutputWriter();
             var xmlWriterSettings = this.xmlConfiguration.XmlWriterSettings;
 
@@ -39,7 +39,7 @@ namespace PeerIsland.XMLParser
             using (xmlWriter = XmlWriter.Create(xmlOutputWriter, xmlWriterSettings))
             {
              
-                xmlTextWriter = new XmlTextWriter(xmlWriter, xmlWriterSettings);
+                xmlTextWriter = new XmlTextWriterSerializer(xmlWriter, xmlWriterSettings);
                 xmlTextWriter.WriteXML(input);
                 xmlWriter.Flush();
             }

@@ -5,9 +5,9 @@ using System.Xml;
 
 namespace PeerIsland.XMLParser
 {
-    internal interface IXMLParser
+    public interface IXMLParser
     {
         bool CanParse(Type value);
-        void ParseXML(XmlWriter xmlWriter, object value);
+        void ParseXML(XmlWriter xmlWriter, object value, XmlTextWriterSerializer writerContext);
     }
 }
