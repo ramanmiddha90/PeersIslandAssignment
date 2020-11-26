@@ -38,8 +38,6 @@ namespace PeerIsland.XMLParser.Tests
             var xmlConfiguration = new XMLConfiguration();
             var xmlParser = new XMLParser(xmlConfiguration);
             var result = xmlParser.AddEmploee(emp, xml);
-            //Assert.NotNull(actual);
-            //Assert.IsType(emp.GetType(), actual);
         }
     }
 }

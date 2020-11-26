@@ -7,6 +7,7 @@ using System.Xml.Serialization;
 
 namespace PeerIsland.XMLParser
 {
+
     public sealed class XMLParser
     {
         /// <summary>
@@ -58,7 +59,6 @@ namespace PeerIsland.XMLParser
             if (string.IsNullOrEmpty(xml))
                 throw new ArgumentNullException(nameof(xml));
 
-
             XmlReader xmlReader;
             XMLTextReaderDeserializer xmlTextReader;
             var xmlOutputReader = this.xmlConfiguration.GetXmlOutputReader(xml);
@@ -74,30 +74,48 @@ namespace PeerIsland.XMLParser
             }
             return (T)new object();
         }
+
+
         /// <summary>
-        /// Serialze object into XML string
+        /// Deserialize XMl using XmlSerializer
         /// </summary>
-        /// <typeparam name="T">Type of object</typeparam>
-        /// <param name="input">Object to be serialzed</param>
+        /// <typeparam name="T">Type into XML deserialized</typeparam>
+        /// <param name="xml">XML</param>
         /// <returns></returns>
         public T DeserializeUsingXMlSerializer<T>(string xml)
         {
             if (string.IsNullOrEmpty(xml))
                 throw new ArgumentNullException(nameof(xml));
 
+            //Validate XML here
+
             var xmlReaderSettings = this.xmlConfiguration.XmlReaderSettings ?? throw new ArgumentException(nameof(XmlReaderSettings));
 
-            XmlReader xmlReader;
-            //XMLTextReaderDeserializer xmlTextReader;
-            XmlSerializer serializer = new XmlSerializer(typeof(T));
-            using (StringReader textReader = new StringReader(xml))
+            try
             {
-                using (xmlReader = XmlReader.Create(textReader, xmlReaderSettings))
+                XmlReader xmlReader;
+                //XMLTextReaderDeserializer xmlTextReader;
+                XmlSerializer serializer = new XmlSerializer(typeof(T));
+                using (StringReader textReader = new StringReader(xml))
                 {
-                    return (T)serializer.Deserialize(xmlReader);
+                    using (xmlReader = XmlReader.Create(textReader, xmlReaderSettings))
+                    {
+                        return (T)serializer.Deserialize(xmlReader);
+                    }
                 }
             }
-          
+            catch(InvalidCastException invalidCastException)
+            {
+                //log exception here
+                //throw custom exception
+                throw;
+            }
+            catch(Exception ex)
+            {
+                //log exception here
+                //throw custom exception
+                throw;
+            }
         }
     }
 }
