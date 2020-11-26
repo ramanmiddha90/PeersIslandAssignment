@@ -13,8 +13,8 @@ namespace PeerIsland.XMLParser.Contracts
 
         public string designation { get; set; }
 
-        [XmlElement("Address")]
-        public Address adress { get; set; }
+        
+        public Address Address { get; set; }
 
         public bool isPermanent { get; set; }
     }

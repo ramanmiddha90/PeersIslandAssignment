@@ -59,7 +59,7 @@ namespace PeerIsland.XMLParser.Tests
             var xmlConfiguration = new XMLConfiguration();
             var xmlParser = new XMLParser(xmlConfiguration);
 
-            var serializedString = xmlParser.Serialize<Employee>(new Employee() { age = "22", isPermanent = false, designation = "Developer", name = "raman", adress = new Address() { address1 = "add" } });
+            var serializedString = xmlParser.Serialize<Employee>(new Employee() { age = "22", isPermanent = false, designation = "Developer", name = "raman", Address = new Address() { address1 = "add" } });
 
             var expected = @"<?xml version=""1.0"" encoding=""utf-16""?>
 <Employee>

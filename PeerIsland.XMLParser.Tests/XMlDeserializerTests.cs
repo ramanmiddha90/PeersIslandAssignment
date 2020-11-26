@@ -26,7 +26,7 @@ namespace PeerIsland.XMLParser.Tests
                 isPermanent = false,
                 designation = "Developer",
                 name = "raman",
-                adress = new Address() { address1 = "add" }
+                Address = new Address() { address1 = "add" }
             };
             var xmlConfiguration = new XMLConfiguration();
             var xmlParser = new XMLParser(xmlConfiguration);
