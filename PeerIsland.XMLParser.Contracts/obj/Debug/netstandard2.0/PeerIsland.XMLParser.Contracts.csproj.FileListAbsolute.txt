@@ -1,0 +1,8 @@
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParser.Contracts\bin\Debug\netstandard2.0\PeerIsland.XMLParser.Contracts.deps.json
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParser.Contracts\bin\Debug\netstandard2.0\PeerIsland.XMLParser.Contracts.dll
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParser.Contracts\bin\Debug\netstandard2.0\PeerIsland.XMLParser.Contracts.pdb
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParser.Contracts\obj\Debug\netstandard2.0\PeerIsland.XMLParser.Contracts.csprojAssemblyReference.cache
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParser.Contracts\obj\Debug\netstandard2.0\PeerIsland.XMLParser.Contracts.AssemblyInfoInputs.cache
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParser.Contracts\obj\Debug\netstandard2.0\PeerIsland.XMLParser.Contracts.AssemblyInfo.cs
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParser.Contracts\obj\Debug\netstandard2.0\PeerIsland.XMLParser.Contracts.dll
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParser.Contracts\obj\Debug\netstandard2.0\PeerIsland.XMLParser.Contracts.pdb
