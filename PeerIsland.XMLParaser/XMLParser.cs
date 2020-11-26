@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Xml;
+using System.Xml.Serialization;
 
 namespace PeerIsland.XMLParser
 {
@@ -84,25 +85,22 @@ namespace PeerIsland.XMLParser
         /// <returns></returns>
         public T DeserializeUsingXMlSerializer<T>(string xml)
         {
-
-
             if (string.IsNullOrEmpty(xml))
                 throw new ArgumentNullException(nameof(xml));
 
             var xmlReaderSettings = this.xmlConfiguration.XmlReaderSettings ?? throw new ArgumentException(nameof(XmlReaderSettings));
 
             XmlReader xmlReader;
-            XMLTextReaderDeserializer xmlTextReader;
-       
-            using (xmlReader = XmlReader.Create(xml))
+            //XMLTextReaderDeserializer xmlTextReader;
+            XmlSerializer serializer = new XmlSerializer(typeof(T));
+            using (StringReader textReader = new StringReader(xml))
             {
-                xmlTextReader = new XMLTextReaderDeserializer(xmlReader, xmlReaderSettings);
-                xmlTextReader.Deserialize<T>(xml);
-                xmlReader.Close();
+                using (xmlReader = XmlReader.Create(textReader, xmlReaderSettings))
+                {
+                    return (T)serializer.Deserialize(xmlReader);
+                }
             }
-            return xmlTextReader.Deserialize<T>(xml);
-         
-       
+          
         }
     }
 }
