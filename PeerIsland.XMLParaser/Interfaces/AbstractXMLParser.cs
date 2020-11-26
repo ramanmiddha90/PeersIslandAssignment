@@ -12,7 +12,14 @@ namespace PeerIsland.XMLParser
             return value == typeof(T);
         }
 
+        public bool CanRead(Type value)
+        {
+            return value == typeof(T);
+        }
+
         public abstract void ParseXML(XmlWriter xmlWriter, object value, XmlTextWriterSerializer writerContext);
-       
+
+        public abstract void ReadXML(XmlReader xmlWriter, object value, XMLTextReaderDeserializer writerContext);
+
     }
 }

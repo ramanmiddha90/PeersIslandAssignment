@@ -16,5 +16,10 @@ namespace PeerIsland.XMLParser
                 xmlWriter.WriteString(valueString);
             }
         }
+
+        public override void ReadXML(XmlReader xmlWriter, object value, XMLTextReaderDeserializer writerContext)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

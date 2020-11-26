@@ -5,7 +5,7 @@ using System.Xml;
 
 namespace PeerIsland.XMLParser
 {
-    public class XMLStringParser : AbstractXMLParser<string>
+    public  class XMLStringParser : AbstractXMLParser<string>
     {
         public override void ParseXML(XmlWriter xmlWriter, object value, XmlTextWriterSerializer writerContext)
         {
@@ -13,6 +13,11 @@ namespace PeerIsland.XMLParser
             {
                 xmlWriter.WriteString(value.ToString());
             }
+        }
+
+        public override void ReadXML(XmlReader xmlWriter, object value, XMLTextReaderDeserializer writerContext)
+        {
+            throw new NotImplementedException();
         }
     }
 }

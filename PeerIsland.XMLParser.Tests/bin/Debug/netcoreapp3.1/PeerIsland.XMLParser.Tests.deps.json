@@ -10,6 +10,7 @@
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "16.2.0",
           "PeerIsland.XMLParser": "1.0.0",
+          "PeerIsland.XMLParser.Contracts": "1.0.0",
           "coverlet.collector": "1.0.1",
           "xunit": "2.4.0",
           "xunit.runner.visualstudio": "2.4.0"
@@ -1347,6 +1348,11 @@
         "runtime": {
           "PeerIsland.XMLParser.dll": {}
         }
+      },
+      "PeerIsland.XMLParser.Contracts/1.0.0": {
+        "runtime": {
+          "PeerIsland.XMLParser.Contracts.dll": {}
+        }
       }
     }
   },
@@ -2050,6 +2056,11 @@
       "hashPath": "xunit.runner.visualstudio.2.4.0.nupkg.sha512"
     },
     "PeerIsland.XMLParser/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PeerIsland.XMLParser.Contracts/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

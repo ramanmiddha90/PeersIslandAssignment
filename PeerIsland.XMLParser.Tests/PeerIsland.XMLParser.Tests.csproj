@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PeerIsland.XMLParaser\PeerIsland.XMLParser.csproj" />
+    <ProjectReference Include="..\PeerIsland.XMLParser.Contracts\PeerIsland.XMLParser.Contracts.csproj" />
   </ItemGroup>
 
 </Project>

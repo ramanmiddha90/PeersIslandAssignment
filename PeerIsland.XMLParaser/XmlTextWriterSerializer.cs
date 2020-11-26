@@ -24,9 +24,7 @@ namespace PeerIsland.XMLParser
                 this.WriteNull();
                 return;
             }
-
-
-            var IXMLParser = XMLParserProcessor.GetXMLParser(Value.GetType());
+            var IXMLParser = XMLParserProcessor.GetwriteXMLParser(Value.GetType());
             IXMLParser.ParseXML(xmlWriter, Value,this);
         }
 
@@ -34,7 +32,7 @@ namespace PeerIsland.XMLParser
         {
             xmlWriter.WriteStartElement(propertyName);
 
-            var IXMLParser = XMLParserProcessor.GetXMLParser(valueType);
+            var IXMLParser = XMLParserProcessor.GetwriteXMLParser(valueType);
             IXMLParser.ParseXML(xmlWriter, value, this);
             xmlWriter.WriteEndElement();
         }

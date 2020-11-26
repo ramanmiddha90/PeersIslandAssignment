@@ -12,6 +12,11 @@ namespace PeerIsland.XMLParser
             return value.GetInterfaces().Any(x => x == typeof(IEnumerable));
         }
 
+        public bool CanRead(Type value)
+        {
+            throw new NotImplementedException();
+        }
+
         public void ParseXML(XmlWriter xmlWriter, object value, XmlTextWriterSerializer writerContext)
         {
           //  xmlWriter.WriteStartElement(value.GetType().);
@@ -29,6 +34,11 @@ namespace PeerIsland.XMLParser
 
             }
             
+        }
+
+        public void ReadXML(XmlReader xmlWriter, object value, XMLTextReaderDeserializer writerContext)
+        {
+            throw new NotImplementedException();
         }
     }
 }

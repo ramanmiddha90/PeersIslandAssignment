@@ -14,6 +14,13 @@ namespace PeerIsland.XMLParser
             return !value.IsPrimitive || value == typeof(string);
         }
 
+
+        public bool CanRead(Type valueType)
+        {
+            return valueType.IsObject();
+        }
+
+
         public void ParseXML(XmlWriter xmlWriter, object value)
         {
             throw new NotImplementedException();
@@ -68,6 +75,9 @@ namespace PeerIsland.XMLParser
             return value.GetType().Name;
         }
 
-
+        public void ReadXML(XmlReader xmlWriter, object value, XMLTextReaderDeserializer writerContext)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
