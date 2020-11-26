@@ -35,6 +35,16 @@
         "runtime": {
           "bin/placeholder/PeerIsland.XMLParser.dll": {}
         }
+      },
+      "PeerIsland.XMLParser.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/PeerIsland.XMLParser.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PeerIsland.XMLParser.Contracts.dll": {}
+        }
       }
     }
   },
@@ -187,12 +197,18 @@
       "type": "project",
       "path": "../PeerIsland.XMLParaser/PeerIsland.XMLParser.csproj",
       "msbuildProject": "../PeerIsland.XMLParaser/PeerIsland.XMLParser.csproj"
+    },
+    "PeerIsland.XMLParser.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../PeerIsland.XMLParser.Contracts/PeerIsland.XMLParser.Contracts.csproj",
+      "msbuildProject": "../PeerIsland.XMLParser.Contracts/PeerIsland.XMLParser.Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
-      "PeerIsland.XMLParser >= 1.0.0"
+      "PeerIsland.XMLParser >= 1.0.0",
+      "PeerIsland.XMLParser.Contracts >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -229,6 +245,9 @@
           "projectReferences": {
             "C:\\Users\\RAMAN_KUMAR\\source\\repos\\PeerIsland.XMLParaser\\PeerIsland.XMLParaser\\PeerIsland.XMLParser.csproj": {
               "projectPath": "C:\\Users\\RAMAN_KUMAR\\source\\repos\\PeerIsland.XMLParaser\\PeerIsland.XMLParaser\\PeerIsland.XMLParser.csproj"
+            },
+            "C:\\Users\\RAMAN_KUMAR\\source\\repos\\PeerIsland.XMLParaser\\PeerIsland.XMLParser.Contracts\\PeerIsland.XMLParser.Contracts.csproj": {
+              "projectPath": "C:\\Users\\RAMAN_KUMAR\\source\\repos\\PeerIsland.XMLParaser\\PeerIsland.XMLParser.Contracts\\PeerIsland.XMLParser.Contracts.csproj"
             }
           }
         }

@@ -96,3 +96,5 @@ C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParser.Tes
 C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParser.Tests\bin\Debug\netcoreapp3.1\PeerIsland.XMLParser.pdb
 C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParser.Tests\bin\Debug\netcoreapp3.1\PeerIsland.XMLParser.Contracts.dll
 C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParser.Tests\bin\Debug\netcoreapp3.1\PeerIsland.XMLParser.Contracts.pdb
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParser.Tests\bin\Debug\netcoreapp3.1\PeerIsland.XMLParser.Extension.dll
+C:\Users\RAMAN_KUMAR\source\repos\PeerIsland.XMLParaser\PeerIsland.XMLParser.Tests\bin\Debug\netcoreapp3.1\PeerIsland.XMLParser.Extension.pdb

@@ -35,9 +35,6 @@ namespace PeerIsland.XMLParser
             XmlTextWriterSerializer xmlTextWriter;
             var xmlOutputWriter = this.xmlConfiguration.GetXmlOutputWriter();
             var xmlWriterSettings = this.xmlConfiguration.XmlWriterSettings;
-
-
-
             using (xmlWriter = XmlWriter.Create(xmlOutputWriter, xmlWriterSettings))
             {
 
